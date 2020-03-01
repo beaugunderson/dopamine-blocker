@@ -44,6 +44,7 @@
     "typescript": "~3.8.2",
     "webpack": "~4.41.6",
     "webpack-cli": "~3.3.11",
+    "webpack-extension-reloader": "^1.1.4",
     "webpack-merge": "~4.2.2"
   }
 }

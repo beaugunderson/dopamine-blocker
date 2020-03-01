@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Hepta Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('chrome-extension://__MSG_@@extension_id__/HeptaSlab-Medium.ttf');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Hepta Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('chrome-extension://__MSG_@@extension_id__/HeptaSlab-Bold.ttf');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body.dopamine-blocker * {
+  display: none;
+}
+
+#dopamine-blocker {
+  all: initial;
+  font-family: 'Hepta Slab';
+  font-weight: 500;
+}
+
+#dopamine-blocker * {
+  all: unset;
+  font-family: 'Hepta Slab';
+  font-weight: 500;
+}
+
+#dopamine-blocker {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10000;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  display: flex !important;
+  height: 100vh
+}
+
+#dopamine-blocker #dopamine-blocker-banner {
+  color: black;
+  margin: auto;
+  text-align: center;
+  font-size: 24pt;
+}
+
+#dopamine-blocker #dopamine-blocker-seconds {
+  font-weight: 700;
+}

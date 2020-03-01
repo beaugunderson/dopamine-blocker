@@ -17,19 +17,28 @@
 
   "content_scripts": [
     {
+      "css": ["content.css"],
+      "js": ["js/content_script.js"],
       "matches": ["<all_urls>"],
-      "js": ["js/vendor.js", "js/content_script.js"]
+      "run_at": "document_start"
     }
+  ],
+
+  "web_accessible_resources": [
+    "HeptaSlab-Medium.ttf",
+    "HeptaSlab-Bold.ttf"
   ],
 
   "incognito": "split",
 
   "background": {
-    "scripts": ["js/vendor.js", "js/background.js"]
+    "scripts": ["js/background.js"],
+    "persistent": false
   },
 
   "permissions": [
     "storage",
+    "webNavigation",
     "<all_urls>"
   ]
 }
